@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hbase-table-reporter" />
+        <module name="hbase-hbck2" />
+        <module name="hbase-tools" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hbase-hbck2" target="1.8" />
+      <module name="hbase-operator-tools" target="1.7" />
+      <module name="hbase-operator-tools-assembly" target="1.7" />
+      <module name="hbase-table-reporter" target="1.8" />
+      <module name="hbase-tools" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hbase-hbck2" options="-Xlint:-options" />
+      <module name="hbase-table-reporter" options="-Xlint:-options" />
+      <module name="hbase-tools" options="-Xlint:-options" />
+    </option>
+  </component>
+</project>
